@@ -4,7 +4,9 @@
     "doc": "docs"
   },
   "scripts": {
-    "dev": "cd print3d-react && yarn dev"
+    "dev-app": "cd app && yarn dev",
+    "dev-api": "cd api && yarn start",
+    "dev": "concurrently -n w: npm:dev-*"
   },
   "repository": {
     "type": "git",
